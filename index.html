@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Fodrász Szalon</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+<nav class="nav">
+  <div class="logo">FS</div>
+  <ul class="nav-links">
+    <li><a href="#services">Szolgáltatások</a></li>
+    <li><a href="#gallery">Galéria</a></li>
+    <li><a href="#about">Rólunk</a></li>
+    <li><a href="#testimonials">Referenciák</a></li>
+    <li><a href="#contact">Kapcsolat</a></li>
+    <li><a href="#booking" class="btn">Időpontfoglalás</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Üdvözlünk a Modern Fodrász Szalonban</h1>
+    <p>Professzionális hajvágás, festés és styling. Foglalj időpontot könnyedén!</p>
+    <a href="#booking" class="btn hero-btn">Foglalás</a>
+  </div>
+</section>
+</header>
+
+<main>
+<!-- Szolgáltatások -->
+<section id="services" class="fade-in section-center">
+  <h2>Szolgáltatásaink</h2>
+  <div class="cards">
+    <div class="card" data-service="noi">Női vágás<br><span class="price">60 perc - 8 500 Ft</span></div>
+    <div class="card" data-service="ferfi">Férfi vágás<br><span class="price">30 perc - 5 000 Ft</span></div>
+    <div class="card" data-service="balayage">Balayage<br><span class="price">90 perc - 32 000 Ft</span></div>
+    <div class="card" data-service="festes">Hajfestés<br><span class="price">60 perc - 12 000 Ft</span></div>
+  </div>
+</section>
+
+<!-- Galéria -->
+<section id="gallery" class="fade-in section-center">
+  <h2>Galéria</h2>
+  <div class="gallery">
+    <img src="images/40-skin-fade-haircuts-bald-fade-haircuts.jpg" alt="Referencia 1">
+    <img src="images/Ferfi hajvagas_800x582px.jpg" alt="Referencia 2">
+    <img src="images/image7-768x1024.jpeg" alt="Referencia 3">
+    <img src="images/shutterstock_568820452-scaled.jpg" alt="Referencia 4">
+    <img src="images/The+French+Crop.webp" alt="Referencia 5">
+  </div>
+</section>
+
+<!-- Rólunk -->
+<section id="about" class="fade-in section-center">
+  <h2>Rólunk</h2>
+  <div class="team">
+    <div class="member">
+      <img src="https://source.unsplash.com/200x200/?woman,hairdresser" alt="Anna">
+      <h3>Anna</h3>
+      <p>Főfodrász, balayage specialist.</p>
+    </div>
+    <div class="member">
+      <img src="https://source.unsplash.com/200x200/?man,hairdresser" alt="Bence">
+      <h3>Bence</h3>
+      <p>Férfi vágások és styling szakértő.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Referenciák -->
+<section id="testimonials" class="fade-in section-center">
+  <h2>Referenciák</h2>
+  <div class="testimonials">
+    <div class="testimonial">"Nagyszerű balayage! Nagyon elégedett vagyok." — Réka</div>
+    <div class="testimonial">"Precíz férfi vágás, profi csapat." — Gábor</div>
+  </div>
+</section>
+
+<!-- Időpontfoglalás -->
+<section id="booking" class="fade-in section-center">
+  <h2>Időpontfoglalás</h2>
+  <form id="bookingForm">
+    <input type="text" id="name" placeholder="Név" required>
+    <input type="tel" id="phone" placeholder="Telefonszám" required>
+    <input type="email" id="email" placeholder="E-mail">
+    <select id="service" required>
+      <option value="">Szolgáltatás</option>
+      <option value="ferfi">Férfi hajvágás</option>
+      <option value="noi">Női hajvágás</option>
+      <option value="balayage">Balayage</option>
+      <option value="festes">Hajfestés</option>
+    </select>
+    <input type="date" id="date" required>
+    <select id="time" required>
+      <option value="">Válassz időpontot</option>
+    </select>
+    <textarea id="note" placeholder="Megjegyzés"></textarea>
+    <button type="submit" class="btn">Foglalás</button>
+    <div id="msg" class="msg"></div>
+  </form>
+</section>
+
+<!-- Kapcsolat / Google Maps -->
+<section id="contact" class="fade-in section-center">
+  <h2>Kapcsolat</h2>
+  <div class="contact-info">
+    <p>Cím: Budapest, Minta utca 12.</p>
+    <p>Telefon: +36 1 234 5678</p>
+    <p>E-mail: info@fodraszszalon.hu</p>
+  </div>
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© 2025 Modern Fodrász Szalon</p>
+  <div class="social">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
