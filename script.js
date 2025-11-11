@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   async function fetchAvailableTimes(service, date){
     if(!service || !date) return;
-    const response = await fetch(`${appsScriptURL}?action=getAvailableTimes&service=${service}&date=${date}`);
+    const response = await fetch(`/api/fetchTimes?service=${service}&date=${date}`);
     const times = await response.json();
     const timeSelect = document.getElementById('time');
     timeSelect.innerHTML = '<option value="">Válassz időpontot</option>';
